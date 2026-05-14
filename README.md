@@ -1,11 +1,12 @@
-# @devsabir/moving-icons-react
+# moving-icons-react
 
 > 550+ beautifully crafted, interaction-ready animated icons for **React**.
 
 Hover any icon to trigger its animation. All icons accept an `animate` prop for programmatic control.
 
-[![npm version](https://img.shields.io/npm/v/@devsabir/moving-icons-react)](https://www.npmjs.com/package/@devsabir/moving-icons-react)
+[![npm version](https://img.shields.io/npm/v/moving-icons-react)](https://www.npmjs.com/package/moving-icons-react)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub](https://img.shields.io/badge/github-SabirKhanek%2Fmoving--icons--react-181717?logo=github)](https://github.com/SabirKhanek/moving-icons-react)
 
 ---
 
@@ -20,17 +21,15 @@ Original repository: [github.com/jis3r/icons](https://github.com/jis3r/icons)
 ## Installation
 
 ```bash
-npm install @devsabir/moving-icons-react
+npm install moving-icons-react
 ```
 
 ## Usage
 
 No CSS import needed — each icon automatically loads only its own styles when imported.
 
-Use any icon:
-
 ```tsx
-import { Bell, AlarmClock, Sun, ShoppingCart } from '@devsabir/moving-icons-react';
+import { Bell, AlarmClock, Sun, ShoppingCart } from 'moving-icons-react';
 
 export default function App() {
   return (

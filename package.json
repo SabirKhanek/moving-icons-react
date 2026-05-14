@@ -1,5 +1,5 @@
 {
-  "name": "@devsabir/moving-icons-react",
+  "name": "moving-icons-react",
   "version": "1.0.0",
   "description": "500+ beautifully crafted, interaction-ready animated icons for React. Based on the Moving Icons Svelte library by jis3r.",
   "keywords": [
@@ -12,6 +12,14 @@
   ],
   "author": "devsabir",
   "license": "MIT",
+  "homepage": "https://github.com/SabirKhanek/moving-icons-react#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SabirKhanek/moving-icons-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SabirKhanek/moving-icons-react/issues"
+  },
   "type": "module",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
