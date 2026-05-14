@@ -1,0 +1,26 @@
+.cherry-icon {
+		overflow: visible;
+	}
+
+	.animate-group {
+		animation: cherrySwing 0.8s ease-in-out;
+		transform-origin: top center;
+	}
+
+	@keyframes cherrySwing {
+		0% {
+			transform: rotate(0deg);
+		}
+		25% {
+			transform: rotate(-12deg);
+		}
+		50% {
+			transform: rotate(7deg);
+		}
+		75% {
+			transform: rotate(-4deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}

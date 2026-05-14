@@ -1,0 +1,26 @@
+.arrow {
+		transform-origin: center;
+		transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.arrow.animate {
+		transform: rotate(-50deg);
+	}
+
+	.hour-hand {
+		transform-origin: 50% 50%;
+		transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.hour-hand.animate {
+		transform: rotate(-360deg);
+	}
+
+	.minute-hand {
+		transform-origin: 50% 50%;
+		transition: transform 0.5s ease-in-out;
+	}
+
+	.minute-hand.animate {
+		transform: rotate(-45deg);
+	}

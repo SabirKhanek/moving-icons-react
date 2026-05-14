@@ -1,0 +1,15 @@
+.chevrons-down-up-icon {
+		overflow: visible;
+	}
+
+	.chevrons-down-up-icon path {
+		transition: all 0.2s ease-in;
+	}
+
+	.chevron-up {
+		transform: translateY(-3px);
+	}
+
+	.chevron-down {
+		transform: translateY(3px);
+	}

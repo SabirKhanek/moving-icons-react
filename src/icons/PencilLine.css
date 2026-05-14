@@ -1,0 +1,25 @@
+.pencil-line-icon {
+		overflow: visible;
+	}
+
+	.pen {
+		transform-origin: 16.376px 3.622px;
+		transition: transform 0.25s ease-in-out;
+	}
+
+	.pen.animate {
+		animation: penWiggle 0.5s ease-in-out 2;
+	}
+
+	@keyframes penWiggle {
+		0%,
+		100% {
+			transform: rotate(0deg) translate(0px, 0px);
+		}
+		25% {
+			transform: rotate(-0.5deg) translate(-1px, 1.5px);
+		}
+		75% {
+			transform: rotate(0.5deg) translate(1.5px, -1px);
+		}
+	}

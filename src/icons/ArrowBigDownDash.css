@@ -1,0 +1,9 @@
+svg path {
+		transition: transform 0.2s ease-out;
+	}
+	.animate-arrow {
+		transform: translateY(3px);
+	}
+	.animate-dash {
+		transform: translateY(1px);
+	}

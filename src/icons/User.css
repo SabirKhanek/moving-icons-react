@@ -1,0 +1,42 @@
+.user-path,
+	.user-circle {
+		transition: transform 0.6s ease-in-out;
+	}
+
+	.user-icon.animate .user-path {
+		animation: pathBounce 0.6s ease-in-out;
+	}
+
+	.user-icon.animate .user-circle {
+		animation: circleBounce 0.6s ease-in-out;
+	}
+
+	@keyframes pathBounce {
+		0% {
+			transform: translateY(0);
+		}
+		33% {
+			transform: translateY(2px);
+		}
+		66% {
+			transform: translateY(-2px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes circleBounce {
+		0% {
+			transform: translateY(0);
+		}
+		33% {
+			transform: translateY(4px);
+		}
+		66% {
+			transform: translateY(-2px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}

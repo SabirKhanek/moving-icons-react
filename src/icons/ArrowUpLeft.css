@@ -1,0 +1,7 @@
+path {
+		transition: all 0.2s ease-out;
+	}
+	/* Arrow is pointing up-left, so head moves down-right */
+	.head {
+		transform: translate(3px, 3px);
+	}

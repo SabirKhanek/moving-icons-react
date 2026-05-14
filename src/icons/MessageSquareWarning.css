@@ -1,0 +1,48 @@
+.message-square-warning-group {
+		transform-origin: bottom left;
+	}
+
+	.message-square-warning-group.animate {
+		animation: groupRotation 0.8s ease-in-out;
+	}
+
+	.path2 {
+		transform: translateY(0);
+	}
+
+	.message-square-warning-group.animate .path2 {
+		animation: path2Animation 0.8s ease-in-out;
+	}
+
+	@keyframes groupRotation {
+		0% {
+			transform: rotate(0deg);
+		}
+		40% {
+			transform: rotate(8deg);
+		}
+		60% {
+			transform: rotate(-8deg);
+		}
+		80% {
+			transform: rotate(2deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	@keyframes path2Animation {
+		0% {
+			transform: translateY(0);
+		}
+		40% {
+			transform: translateY(1px);
+		}
+		70% {
+			transform: translateY(-0.25px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}

@@ -1,0 +1,15 @@
+.chevrons-right-left-icon {
+		overflow: visible;
+	}
+
+	.chevrons-right-left-icon path {
+		transition: all 0.2s ease-in;
+	}
+
+	.chevron-left {
+		transform: translateX(-3px);
+	}
+
+	.chevron-right {
+		transform: translateX(3px);
+	}

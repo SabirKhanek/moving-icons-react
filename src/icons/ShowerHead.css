@@ -1,0 +1,21 @@
+.shower-head-icon {
+		overflow: visible;
+	}
+
+	.drop {
+		opacity: 1;
+	}
+
+	@keyframes fadeInOut {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.2;
+		}
+	}
+
+	.drop.animate {
+		animation: fadeInOut 1s ease-in-out infinite;
+	}

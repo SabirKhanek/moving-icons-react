@@ -1,0 +1,13 @@
+.contrast-icon {
+		overflow: visible;
+	}
+
+	.right {
+		transition: transform 0.3s ease;
+		transform-origin: center;
+	}
+
+	/* Hover state */
+	.contrast-icon.animate .right {
+		transform: rotate(-180deg);
+	}

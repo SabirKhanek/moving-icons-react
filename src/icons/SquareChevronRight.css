@@ -1,0 +1,21 @@
+.square-chevron-right {
+		overflow: visible;
+	}
+
+	.chevron {
+		transition: transform 0.3s ease-in;
+	}
+
+	.square-chevron-right.animate .chevron {
+		animation: bounceChevron 0.3s ease-in;
+	}
+
+	@keyframes bounceChevron {
+		0%,
+		100% {
+			transform: translateX(0);
+		}
+		40% {
+			transform: translateX(2px);
+		}
+	}

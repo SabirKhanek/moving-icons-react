@@ -1,0 +1,28 @@
+.wave {
+		fill: none;
+		stroke-dasharray: 23;
+		stroke-dashoffset: 0;
+		transition: stroke-dashoffset 0.4s ease-in-out;
+	}
+
+	.animate .wave-1 {
+		animation: draw 1s ease-in-out forwards;
+	}
+
+	.animate .wave-2 {
+		animation: draw 1s ease-in-out forwards;
+	}
+
+	.animate .wave-3 {
+		animation: draw 1s ease-in-out forwards;
+	}
+
+	@keyframes draw {
+		0%,
+		10% {
+			stroke-dashoffset: 23;
+		}
+		100% {
+			stroke-dashoffset: 0;
+		}
+	}

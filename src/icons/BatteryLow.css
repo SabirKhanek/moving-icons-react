@@ -1,0 +1,26 @@
+.battery-icon {
+		overflow: visible;
+	}
+
+	.battery-bar {
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+
+	.battery-icon.animate .battery-bar {
+		animation: fadeInSequence 0.3s ease forwards;
+	}
+
+	.battery-icon.animate .battery-bar-1 {
+		opacity: 0;
+		animation-delay: 0.4s;
+	}
+
+	@keyframes fadeInSequence {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}

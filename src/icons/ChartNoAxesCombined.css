@@ -1,0 +1,78 @@
+.chart-no-axes-combined-icon {
+		overflow: visible;
+	}
+
+	.line {
+		stroke-dasharray: 28;
+		stroke-dashoffset: 0;
+		transition:
+			stroke-dashoffset 0.3s ease,
+			opacity 0.3s ease;
+	}
+
+	.chart-no-axes-combined-icon.animate .line {
+		animation: lineAnimation 0.9s ease backwards;
+		animation-delay: 0.1s;
+	}
+
+	.column {
+		stroke-dasharray: 20;
+		stroke-dashoffset: 0;
+		transition:
+			stroke-dashoffset 0.3s ease,
+			opacity 0.3s ease;
+	}
+
+	.chart-no-axes-combined-icon.animate .column {
+		animation: columnAnimation 0.5s ease backwards;
+	}
+
+	.chart-no-axes-combined-icon.animate .column-0 {
+		animation-delay: 0s;
+	}
+
+	.chart-no-axes-combined-icon.animate .column-1 {
+		animation-delay: 0.1s;
+	}
+
+	.chart-no-axes-combined-icon.animate .column-2 {
+		animation-delay: 0.2s;
+	}
+
+	.chart-no-axes-combined-icon.animate .column-3 {
+		animation-delay: 0.3s;
+	}
+
+	.chart-no-axes-combined-icon.animate .column-4 {
+		animation-delay: 0.4s;
+	}
+
+	@keyframes lineAnimation {
+		0% {
+			stroke-dashoffset: 28;
+			opacity: 0;
+		}
+		15% {
+			stroke-dashoffset: 28;
+			opacity: 0;
+		}
+		100% {
+			stroke-dashoffset: 0;
+			opacity: 1;
+		}
+	}
+
+	@keyframes columnAnimation {
+		0% {
+			stroke-dashoffset: 0;
+			opacity: 1;
+		}
+		50% {
+			stroke-dashoffset: 20;
+			opacity: 0;
+		}
+		100% {
+			stroke-dashoffset: 0;
+			opacity: 1;
+		}
+	}

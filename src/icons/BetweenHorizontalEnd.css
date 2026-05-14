@@ -1,0 +1,23 @@
+.rect-top {
+		transition: all 0.15s ease-in;
+	}
+
+	.rect-top.animate {
+		transform: translateY(-1px);
+	}
+
+	.rect-bottom {
+		transition: all 0.15s ease-in;
+	}
+
+	.rect-bottom.animate {
+		transform: translateY(1px);
+	}
+
+	.arrow {
+		transition: all 0.15s ease-in;
+	}
+
+	.arrow.animate {
+		transform: translateX(-2px);
+	}

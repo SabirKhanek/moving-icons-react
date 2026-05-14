@@ -1,0 +1,54 @@
+{
+  "name": "@devsabir/moving-icons-react",
+  "version": "1.0.0",
+  "description": "500+ beautifully crafted, interaction-ready animated icons for React. Based on the Moving Icons Svelte library by jis3r.",
+  "keywords": [
+    "react",
+    "icons",
+    "animated",
+    "lucide",
+    "moving",
+    "svg"
+  ],
+  "author": "devsabir",
+  "license": "MIT",
+  "type": "module",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./icons/*": {
+      "import": "./dist/icons/*.js",
+      "types": "./dist/icons/*.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "vite demo",
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "build:demo": "vite build --config vite.demo.config.ts",
+    "preview": "vite preview",
+    "generate": "node ../scripts/convert-to-react.mjs"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "devDependencies": {
+    "@types/node": "^25.7.0",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.5.2",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}

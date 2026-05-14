@@ -1,0 +1,8 @@
+.chevrons-up-icon {
+		overflow: visible;
+		transition: all 0.2s ease-in;
+	}
+
+	.chevron-up {
+		transform: translateY(-3px);
+	}

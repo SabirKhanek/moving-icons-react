@@ -1,0 +1,25 @@
+.message-square-dashed-group {
+		transform-origin: bottom left;
+	}
+
+	.animate .message-square-dashed-group {
+		animation: messageSquareDashedGroupAnimation 0.8s ease-in-out;
+	}
+
+	@keyframes messageSquareDashedGroupAnimation {
+		0% {
+			transform: rotate(0deg);
+		}
+		40% {
+			transform: rotate(8deg);
+		}
+		60% {
+			transform: rotate(-8deg);
+		}
+		80% {
+			transform: rotate(2deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}

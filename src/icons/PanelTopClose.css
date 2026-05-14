@@ -1,0 +1,12 @@
+path {
+		transition: all 0.2s ease-in;
+	}
+
+	.line {
+		transform: translateY(-2px);
+		transition-delay: 0.05s;
+	}
+
+	.chevron {
+		transform: translateY(-2px);
+	}

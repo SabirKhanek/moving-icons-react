@@ -1,0 +1,23 @@
+.sun-icon {
+		overflow: visible;
+	}
+
+	.sun-ray {
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+
+	.sun-icon.animate .sun-ray {
+		opacity: 0;
+		animation: fadeIn 0.3s ease forwards;
+		animation-delay: calc(0.1s + var(--index) * 0.09s);
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}

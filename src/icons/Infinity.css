@@ -1,0 +1,25 @@
+.infinity-icon {
+		overflow: visible;
+	}
+
+	.line {
+		stroke-dasharray: 28;
+		stroke-dashoffset: 0;
+		transition: stroke-dashoffset 1s ease-in-out;
+	}
+
+	.infinity-icon.animate .line {
+		animation: lineAnimation 1s ease-in-out;
+	}
+
+	@keyframes lineAnimation {
+		0% {
+			stroke-dashoffset: 28;
+		}
+		15% {
+			stroke-dashoffset: 28;
+		}
+		100% {
+			stroke-dashoffset: 56;
+		}
+	}

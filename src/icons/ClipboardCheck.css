@@ -1,0 +1,71 @@
+.clipboard-check-icon {
+		overflow: visible;
+	}
+
+	.clip,
+	.board {
+		transition: transform 0.3s ease;
+	}
+
+	.clipboard-check-icon.animate .clip {
+		animation: clipBounce 0.5s ease-in-out;
+	}
+
+	.clipboard-check-icon.animate .board {
+		animation: boardShake 0.5s ease-in-out;
+	}
+
+	.check-path {
+		stroke-dasharray: 9;
+		stroke-dashoffset: 0;
+		transition:
+			stroke-dashoffset 0.125s ease-out,
+			opacity 0.125s ease-out;
+	}
+	.clipboard-check-icon.animate .check-path {
+		animation: checkAnimation 0.5s ease-out backwards;
+	}
+	@keyframes checkAnimation {
+		0% {
+			stroke-dashoffset: 9;
+			opacity: 0;
+		}
+		33% {
+			stroke-dashoffset: 9;
+			opacity: 0;
+		}
+		100% {
+			stroke-dashoffset: 0;
+			opacity: 1;
+		}
+	}
+
+	@keyframes clipBounce {
+		0% {
+			transform: translateY(0);
+		}
+		25% {
+			transform: translateY(-2px);
+		}
+		50% {
+			transform: translateY(1px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes boardShake {
+		0% {
+			transform: rotate(0deg);
+		}
+		25% {
+			transform: rotate(-1deg);
+		}
+		75% {
+			transform: rotate(1deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}

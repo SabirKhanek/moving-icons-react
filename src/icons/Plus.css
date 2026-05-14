@@ -1,0 +1,35 @@
+.plus {
+		overflow: visible;
+	}
+
+	.horizontal,
+	.vertical {
+		stroke-dasharray: 14;
+		stroke-dashoffset: 0;
+		transition: stroke-dashoffset 0.15s ease-out;
+	}
+
+	.plus.animate .horizontal {
+		opacity: 0;
+		animation: lineAnimation 0.3s ease-out forwards;
+	}
+
+	.plus.animate .vertical {
+		opacity: 0;
+		animation: lineAnimation 0.3s ease-out 0.25s forwards; /* Start shortly before horizontal ends */
+	}
+
+	@keyframes lineAnimation {
+		0% {
+			opacity: 0;
+			stroke-dashoffset: 14;
+		}
+		15% {
+			opacity: 1;
+			stroke-dashoffset: 14;
+		}
+		100% {
+			opacity: 1;
+			stroke-dashoffset: 0;
+		}
+	}

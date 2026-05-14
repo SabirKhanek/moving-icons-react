@@ -1,0 +1,45 @@
+.alarm-clock-icon {
+		overflow: visible;
+	}
+
+	.alarm-clock-icon path {
+		transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.alarm-clock-icon.animate .primary-path {
+		animation: primaryPathAnimation 0.3s linear infinite;
+	}
+
+	.alarm-clock-icon.animate .secondary-path {
+		animation: secondaryPathAnimation 0.3s linear infinite;
+	}
+
+	@keyframes primaryPathAnimation {
+		0%,
+		100% {
+			transform: translate(0, -1.5px);
+		}
+		20%,
+		60% {
+			transform: translate(-1px, -1.5px);
+		}
+		40%,
+		80% {
+			transform: translate(1px, -1.5px);
+		}
+	}
+
+	@keyframes secondaryPathAnimation {
+		0%,
+		100% {
+			transform: translate(0, -2.5px);
+		}
+		20%,
+		60% {
+			transform: translate(-2px, -2.5px);
+		}
+		40%,
+		80% {
+			transform: translate(2px, -2.5px);
+		}
+	}

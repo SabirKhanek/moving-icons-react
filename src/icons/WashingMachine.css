@@ -1,0 +1,17 @@
+.drum {
+		transform-origin: center 13px;
+		transition: transform 1s ease-in-out;
+	}
+
+	.drum.animate {
+		animation: rotate-drum 3s ease-in-out;
+	}
+
+	@keyframes rotate-drum {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(-1080deg);
+		}
+	}

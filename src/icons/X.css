@@ -1,0 +1,35 @@
+.x {
+		overflow: visible;
+	}
+
+	.diagonal-1,
+	.diagonal-2 {
+		stroke-dasharray: 17;
+		stroke-dashoffset: 0;
+		transition: stroke-dashoffset 0.15s ease-out;
+	}
+
+	.x.animate .diagonal-1 {
+		opacity: 0;
+		animation: lineAnimation 0.3s ease-out forwards;
+	}
+
+	.x.animate .diagonal-2 {
+		opacity: 0;
+		animation: lineAnimation 0.3s ease-out 0.25s forwards;
+	}
+
+	@keyframes lineAnimation {
+		0% {
+			opacity: 0;
+			stroke-dashoffset: 17;
+		}
+		15% {
+			opacity: 1;
+			stroke-dashoffset: 17;
+		}
+		100% {
+			opacity: 1;
+			stroke-dashoffset: 0;
+		}
+	}

@@ -1,0 +1,12 @@
+.airplay-icon {
+		overflow: visible;
+	}
+
+	.airplay-path2 {
+		transform: translateY(0);
+		transition: transform 0.4s cubic-bezier(0, 0, 0.3, 1.6);
+	}
+
+	.airplay-path2.hovered {
+		transform: translateY(2px);
+	}

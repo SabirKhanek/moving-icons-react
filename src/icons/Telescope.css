@@ -1,0 +1,8 @@
+.telescope-icon {
+		transform-origin: center;
+		transition: transform 0.3s ease-in-out;
+	}
+
+	.telescope-icon.animate {
+		transform: rotate(-15deg);
+	}

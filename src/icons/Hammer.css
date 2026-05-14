@@ -1,0 +1,23 @@
+.hammer-icon {
+		transform-origin: bottom left;
+		transition: transform 0.3s ease;
+	}
+
+	.hammer-icon.animate {
+		animation: swing 1s ease;
+	}
+
+	@keyframes swing {
+		0% {
+			transform: rotate(0deg);
+		}
+		60% {
+			transform: rotate(-20deg);
+		}
+		80% {
+			transform: rotate(15deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}

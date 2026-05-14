@@ -1,0 +1,21 @@
+.grip-horizontal-icon {
+		overflow: visible;
+	}
+
+	.grip-circle {
+		opacity: 1;
+	}
+
+	@keyframes fadeInOut {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.3;
+		}
+	}
+
+	.grip-circle.animate {
+		animation: fadeInOut 0.8s ease-in-out forwards;
+	}

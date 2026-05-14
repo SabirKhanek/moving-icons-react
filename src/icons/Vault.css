@@ -1,0 +1,13 @@
+.vault-icon {
+		overflow: visible;
+	}
+
+	.inner-elements {
+		transform-origin: center;
+		transition: transform 0.35s ease-in-out;
+		transform: rotate(0deg);
+	}
+
+	.inner-elements.hovered {
+		transform: rotate(90deg);
+	}

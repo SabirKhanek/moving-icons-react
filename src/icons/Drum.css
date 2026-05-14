@@ -1,0 +1,35 @@
+.drum-icon {
+		overflow: visible;
+	}
+
+	.drum-icon path {
+		transition: transform 0.3s ease;
+	}
+
+	.drum-icon.animate .drumstick-1 {
+		animation: drumstick1Animation 0.2s ease-in-out infinite alternate;
+	}
+
+	.drum-icon.animate .drumstick-2 {
+		animation: drumstick2Animation 0.2s ease-in-out infinite alternate;
+	}
+
+	@keyframes drumstick1Animation {
+		0%,
+		100% {
+			transform: rotate(0deg);
+		}
+		50% {
+			transform: rotate(-10deg);
+		}
+	}
+
+	@keyframes drumstick2Animation {
+		0%,
+		100% {
+			transform: rotate(0deg);
+		}
+		50% {
+			transform: rotate(10deg);
+		}
+	}

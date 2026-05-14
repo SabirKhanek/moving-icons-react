@@ -1,0 +1,17 @@
+.orbit-icon {
+		transform-origin: center center;
+		transition: transform 1s ease-in-out;
+	}
+
+	.orbit-icon.animate {
+		animation: rotate-path 3s ease-in-out;
+	}
+
+	@keyframes rotate-path {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(-1080deg);
+		}
+	}

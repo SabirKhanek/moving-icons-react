@@ -1,0 +1,19 @@
+.rotate-animation {
+		transform-origin: top left;
+		animation: rotateAnimation 0.5s ease-in-out;
+	}
+
+	@keyframes rotateAnimation {
+		0% {
+			transform: rotate(0deg);
+		}
+		40% {
+			transform: rotate(10deg);
+		}
+		80% {
+			transform: rotate(-5deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}

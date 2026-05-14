@@ -1,0 +1,48 @@
+.message-circle-heart-group {
+		transform-origin: bottom left;
+	}
+
+	.message-circle-heart-path2 {
+		transform-origin: center;
+	}
+
+	.animate .message-circle-heart-group {
+		animation: messageCircleHeartGroupAnimation 0.8s ease-in-out;
+	}
+
+	.animate .message-circle-heart-path2 {
+		animation: messageCircleHeartPath2Animation 0.8s ease-in-out;
+	}
+
+	@keyframes messageCircleHeartGroupAnimation {
+		0% {
+			transform: rotate(0deg);
+		}
+		40% {
+			transform: rotate(8deg);
+		}
+		60% {
+			transform: rotate(-8deg);
+		}
+		80% {
+			transform: rotate(2deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	@keyframes messageCircleHeartPath2Animation {
+		0% {
+			transform: scale(1);
+		}
+		25% {
+			transform: scale(0.7);
+		}
+		50% {
+			transform: scale(1.1);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}

@@ -1,0 +1,29 @@
+.file-minus {
+		overflow: visible;
+	}
+
+	.horizontal {
+		stroke-dasharray: 8;
+		stroke-dashoffset: 0;
+		transition: stroke-dashoffset 0.5s ease-out;
+	}
+
+	.file-minus.animate .horizontal {
+		opacity: 0;
+		animation: lineAnimation 0.5s ease-out forwards;
+	}
+
+	@keyframes lineAnimation {
+		0% {
+			opacity: 0;
+			stroke-dashoffset: 8;
+		}
+		15% {
+			opacity: 1;
+			stroke-dashoffset: 8;
+		}
+		100% {
+			opacity: 1;
+			stroke-dashoffset: 0;
+		}
+	}

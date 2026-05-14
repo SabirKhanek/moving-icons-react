@@ -1,0 +1,46 @@
+.layout-panel-left-icon {
+		overflow: visible;
+	}
+
+	.layout-panel-left-icon.animate .left-panel {
+		opacity: 0;
+		animation: fadeInLeft 0.3s ease-in forwards;
+	}
+
+	.layout-panel-left-icon.animate .top-right-panel {
+		opacity: 0;
+		animation: fadeInBox 0.4s ease-out 0.1s forwards;
+	}
+
+	.layout-panel-left-icon.animate .bottom-right-panel {
+		opacity: 0;
+		animation: fadeInBox 0.4s ease-out 0.2s forwards;
+	}
+
+	@keyframes fadeInLeft {
+		0%,
+		20% {
+			opacity: 0;
+			transform: translateX(-5px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	@keyframes fadeInBox {
+		0%,
+		50% {
+			opacity: 0;
+			transform: translateX(10px);
+		}
+		80% {
+			opacity: 0.8;
+			transform: translateX(-2px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}

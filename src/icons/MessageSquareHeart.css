@@ -1,0 +1,48 @@
+.message-square-heart-group {
+		transform-origin: bottom left;
+	}
+
+	.message-square-heart-path2 {
+		transform-origin: center;
+	}
+
+	.animate .message-square-heart-group {
+		animation: messageSquareHeartGroupAnimation 0.8s ease-in-out;
+	}
+
+	.animate .message-square-heart-path2 {
+		animation: messageSquareHeartPath2Animation 0.8s ease-in-out;
+	}
+
+	@keyframes messageSquareHeartGroupAnimation {
+		0% {
+			transform: rotate(0deg);
+		}
+		40% {
+			transform: rotate(8deg);
+		}
+		60% {
+			transform: rotate(-8deg);
+		}
+		80% {
+			transform: rotate(2deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	@keyframes messageSquareHeartPath2Animation {
+		0% {
+			transform: scale(1);
+		}
+		25% {
+			transform: scale(0.7);
+		}
+		50% {
+			transform: scale(1.1);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}

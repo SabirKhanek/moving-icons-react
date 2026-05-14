@@ -1,0 +1,16 @@
+.file-stack-icon {
+		overflow: visible;
+	}
+
+	.file-top,
+	.file-bottom {
+		transition: transform 0.3s ease;
+	}
+
+	.file-stack-icon.animate .file-top {
+		transform: translate(-4px, 4px);
+	}
+
+	.file-stack-icon.animate .file-bottom {
+		transform: translate(4px, -4px);
+	}

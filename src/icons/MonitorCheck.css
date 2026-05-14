@@ -1,0 +1,27 @@
+.monitor-check-icon {
+		overflow: visible;
+	}
+	.check-path {
+		stroke-dasharray: 9;
+		stroke-dashoffset: 0;
+		transition:
+			stroke-dashoffset 0.125s ease-out,
+			opacity 0.125s ease-out;
+	}
+	.monitor-check-icon.animate .check-path {
+		animation: checkAnimation 0.5s ease-out backwards;
+	}
+	@keyframes checkAnimation {
+		0% {
+			stroke-dashoffset: 9;
+			opacity: 0;
+		}
+		33% {
+			stroke-dashoffset: 9;
+			opacity: 0;
+		}
+		100% {
+			stroke-dashoffset: 0;
+			opacity: 1;
+		}
+	}

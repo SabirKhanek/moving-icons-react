@@ -1,0 +1,30 @@
+.chart-spline-icon {
+		overflow: visible;
+	}
+
+	.spline {
+		stroke-dasharray: 24;
+		stroke-dashoffset: 0;
+		transition:
+			stroke-dashoffset 0.3s ease,
+			opacity 0.3s ease;
+	}
+
+	.chart-spline-icon.animate .spline {
+		animation: splineAnimation 0.6s ease backwards;
+	}
+
+	@keyframes splineAnimation {
+		0% {
+			stroke-dashoffset: 24;
+			opacity: 1;
+		}
+		15% {
+			stroke-dashoffset: 24;
+			opacity: 0;
+		}
+		100% {
+			stroke-dashoffset: 0;
+			opacity: 1;
+		}
+	}

@@ -1,0 +1,9 @@
+path {
+		transition: transform 0.3s ease;
+	}
+	.bottom-left {
+		transform: translate(1px, -1px);
+	}
+	.top-right {
+		transform: translate(-1px, 1px);
+	}

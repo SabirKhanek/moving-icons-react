@@ -1,0 +1,104 @@
+.clipboard-list-icon {
+		overflow: visible;
+	}
+
+	.clip,
+	.board {
+		transition: transform 0.3s ease;
+	}
+
+	.list-item {
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+
+	.bullet {
+		opacity: 1;
+		transition: opacity 0.3s ease;
+		transform-origin: center;
+	}
+
+	.clipboard-list-icon.animate .list-item,
+	.clipboard-list-icon.animate .bullet {
+		opacity: 0;
+	}
+
+	.clipboard-list-icon.animate .clip {
+		animation: clipBounce 0.5s ease-in-out;
+	}
+
+	.clipboard-list-icon.animate .board {
+		animation: boardShake 0.5s ease-in-out;
+	}
+
+	.clipboard-list-icon.animate .list-item-1 {
+		animation: lineFadeIn 0.2s ease-out forwards;
+		animation-delay: 0.15s;
+	}
+
+	.clipboard-list-icon.animate .bullet-1 {
+		animation: bulletFadeIn 0.2s ease-out forwards;
+		animation-delay: 0.2s;
+	}
+
+	.clipboard-list-icon.animate .list-item-2 {
+		animation: lineFadeIn 0.2s ease-out forwards;
+		animation-delay: 0.3s;
+	}
+
+	.clipboard-list-icon.animate .bullet-2 {
+		animation: bulletFadeIn 0.2s ease-out forwards;
+		animation-delay: 0.35s;
+	}
+
+	@keyframes clipBounce {
+		0% {
+			transform: translateY(0);
+		}
+		25% {
+			transform: translateY(-2px);
+		}
+		50% {
+			transform: translateY(1px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes boardShake {
+		0% {
+			transform: rotate(0deg);
+		}
+		25% {
+			transform: rotate(-1deg);
+		}
+		75% {
+			transform: rotate(1deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	@keyframes bulletFadeIn {
+		from {
+			opacity: 0;
+			transform: translateX(-6px) scale(0.8);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(0) scale(1);
+		}
+	}
+
+	@keyframes lineFadeIn {
+		from {
+			opacity: 0;
+			transform: translateX(-8px);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}

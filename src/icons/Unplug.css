@@ -1,0 +1,32 @@
+.line-1,
+	.line-2,
+	.socket,
+	.plug,
+	.spark-1,
+	.spark-2 {
+		transition:
+			transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+			opacity 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	}
+
+	.line-1.animate {
+		transform: translate(-2px, 2px);
+	}
+
+	.line-2.animate {
+		transform: translate(3px, -3px);
+	}
+
+	.socket.animate {
+		transform: translate(3px, -3px);
+	}
+
+	.plug.animate {
+		transform: translate(-2px, 2px);
+	}
+
+	.spark-1.animate,
+	.spark-2.animate {
+		transform: translate(3px, -3px);
+		opacity: 0;
+	}

@@ -1,0 +1,6 @@
+svg {
+		transition: transform 0.2s ease-out;
+	}
+	.animate {
+		transform: translateX(-3px);
+	}

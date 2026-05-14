@@ -1,0 +1,17 @@
+.is-animated {
+		transform: translateY(-1px);
+		transition: transform 0.2s ease-in;
+	}
+
+	.animate-path {
+		transform: translateY(1px);
+		transition: transform 0.2s ease-in;
+	}
+
+	.is-animated-line {
+		transition: all 0.2s ease-in;
+	}
+
+	.is-animated-path {
+		transition: all 0.2s ease-in;
+	}

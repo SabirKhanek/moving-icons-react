@@ -1,0 +1,23 @@
+.rect-left {
+		transition: all 0.15s ease-in;
+	}
+
+	.rect-left.animate {
+		transform: translateX(-1px);
+	}
+
+	.rect-right {
+		transition: all 0.15s ease-in;
+	}
+
+	.rect-right.animate {
+		transform: translateX(1px);
+	}
+
+	.arrow {
+		transition: all 0.15s ease-in;
+	}
+
+	.arrow.animate {
+		transform: translateY(2px);
+	}

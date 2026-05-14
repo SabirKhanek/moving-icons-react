@@ -1,0 +1,49 @@
+.line {
+		stroke-dasharray: 50;
+		stroke-dashoffset: 0;
+	}
+
+	.route-icon.animate .circle-1 {
+		animation: circle1Animation 0.4s ease-out forwards;
+	}
+
+	.route-icon.animate .circle-2 {
+		animation: circle2Animation 0.4s ease-out forwards;
+	}
+
+	.route-icon.animate .line {
+		animation: lineAnimation 0.8s forwards;
+	}
+
+	@keyframes circle1Animation {
+		0%,
+		50% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes circle2Animation {
+		0%,
+		50% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes lineAnimation {
+		0%,
+		50% {
+			stroke-dashoffset: 50;
+		}
+		15% {
+			stroke-dashoffset: 50;
+		}
+		100% {
+			stroke-dashoffset: 0;
+		}
+	}

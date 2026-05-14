@@ -1,0 +1,33 @@
+.hand-coins-icon {
+		overflow: visible;
+	}
+
+	.first-circle,
+	.second-circle {
+		opacity: 1;
+	}
+
+	@keyframes throw {
+		0% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+		50% {
+			transform: translateY(-10px);
+			opacity: 1;
+		}
+		100% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+
+	.hand-coins-icon.animate .first-circle {
+		animation: throw 0.6s ease-in forwards;
+		animation-delay: 0s;
+	}
+
+	.hand-coins-icon.animate .second-circle {
+		animation: throw 0.6s ease-in forwards;
+		animation-delay: 0.15s;
+	}

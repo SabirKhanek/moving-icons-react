@@ -1,0 +1,22 @@
+.paintbrush-icon {
+		transform-origin: top right;
+	}
+
+	.paintbrush-icon.animate {
+		animation: paintbrushRotation 0.6s ease-in-out;
+	}
+
+	@keyframes paintbrushRotation {
+		0% {
+			transform: rotate(0deg);
+		}
+		33% {
+			transform: rotate(-6deg);
+		}
+		66% {
+			transform: rotate(6deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}

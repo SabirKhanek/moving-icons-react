@@ -1,0 +1,21 @@
+.keyboard-icon {
+		overflow: visible;
+	}
+
+	.keyboard-key {
+		opacity: 1;
+	}
+
+	@keyframes fadeInOut {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.2;
+		}
+	}
+
+	.keyboard-key.animate {
+		animation: fadeInOut 1.5s ease-in-out infinite;
+	}

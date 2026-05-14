@@ -1,0 +1,6 @@
+path {
+		transition: all 0.2s ease-out;
+	}
+	.head {
+		transform: translate(1.5px, -1.5px);
+	}

@@ -1,0 +1,15 @@
+.animate {
+		animation: bounce 0.4s forwards;
+	}
+
+	@keyframes bounce {
+		0% {
+			transform: translateX(0);
+		}
+		50% {
+			transform: translateX(-3px);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}

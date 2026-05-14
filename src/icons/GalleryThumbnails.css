@@ -1,0 +1,23 @@
+.gallery-thumbnails-icon {
+		overflow: visible;
+	}
+
+	.thumbnail-line {
+		opacity: 1;
+		transition: opacity 0.2s ease;
+	}
+
+	.gallery-thumbnails-icon.animate .thumbnail-line {
+		opacity: 0;
+		animation: fadeInSequence 0.3s ease forwards;
+		animation-delay: calc(0.1s + var(--index) * 0.15s);
+	}
+
+	@keyframes fadeInSequence {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}

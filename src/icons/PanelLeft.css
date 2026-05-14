@@ -1,0 +1,8 @@
+path {
+		transition: all 0.2s ease-in;
+	}
+
+	.line {
+		transform: translateX(-2px);
+		transition-delay: 0.05s;
+	}

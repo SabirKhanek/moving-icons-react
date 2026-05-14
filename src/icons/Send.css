@@ -1,0 +1,26 @@
+.send-icon {
+		overflow: hidden;
+	}
+
+	.animate-group {
+		transform-origin: center;
+		animation: sendAnimation 1.2s ease-in-out;
+	}
+
+	@keyframes sendAnimation {
+		0% {
+			transform: scale(1) translateX(0) translateY(0);
+		}
+		25% {
+			transform: scale(0.8) translateX(-10%) translateY(10%);
+		}
+		50% {
+			transform: scale(1) translateX(100%) translateY(-100%);
+		}
+		50.1% {
+			transform: scale(1) translateX(-125%) translateY(125%);
+		}
+		100% {
+			transform: scale(1) translateX(0) translateY(0);
+		}
+	}

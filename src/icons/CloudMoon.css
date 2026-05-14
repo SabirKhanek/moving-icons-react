@@ -1,0 +1,52 @@
+.cloud-moon-icon {
+		overflow: visible;
+	}
+
+	.cloud-moon-path1 {
+		transform: translate(0, 0);
+		transition: transform 0.1s ease-in-out;
+	}
+
+	.cloud-moon-path2 {
+		transform: rotate(0deg);
+		transform-origin: center;
+		transition: transform 0.1s ease-in-out;
+	}
+
+	.cloud-moon-icon.animate .cloud-moon-path1 {
+		animation: cloudMoonPath1 1.4s ease-in-out forwards;
+	}
+
+	.cloud-moon-icon.animate .cloud-moon-path2 {
+		animation: cloudMoonPath2 1.4s ease-in-out forwards;
+	}
+
+	@keyframes cloudMoonPath1 {
+		0% {
+			transform: translate(0, 0);
+		}
+		33.33% {
+			transform: translate(-1px, -1px);
+		}
+		66.66% {
+			transform: translate(1px, 1px);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+
+	@keyframes cloudMoonPath2 {
+		0% {
+			transform: rotate(0deg);
+		}
+		33.33% {
+			transform: rotate(6deg);
+		}
+		66.66% {
+			transform: rotate(-8deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}

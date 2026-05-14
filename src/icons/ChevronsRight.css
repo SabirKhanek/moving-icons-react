@@ -1,0 +1,8 @@
+.chevrons-right-icon {
+		overflow: visible;
+		transition: all 0.2s ease-in;
+	}
+
+	.chevron-right {
+		transform: translateX(3px);
+	}

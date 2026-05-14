@@ -1,0 +1,35 @@
+.circle-plus {
+		overflow: visible;
+	}
+
+	.horizontal,
+	.vertical {
+		stroke-dasharray: 8;
+		stroke-dashoffset: 0;
+		transition: stroke-dashoffset 0.15s ease-out;
+	}
+
+	.circle-plus.animate .horizontal {
+		opacity: 0;
+		animation: lineAnimation 0.3s ease-out forwards;
+	}
+
+	.circle-plus.animate .vertical {
+		opacity: 0;
+		animation: lineAnimation 0.3s ease-out 0.25s forwards;
+	}
+
+	@keyframes lineAnimation {
+		0% {
+			opacity: 0;
+			stroke-dashoffset: 8;
+		}
+		15% {
+			opacity: 1;
+			stroke-dashoffset: 8;
+		}
+		100% {
+			opacity: 1;
+			stroke-dashoffset: 0;
+		}
+	}

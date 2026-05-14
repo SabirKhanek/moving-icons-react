@@ -1,0 +1,24 @@
+.dice-4-icon {
+		overflow: visible;
+	}
+	.dice-4-icon.animate {
+		animation: diceRoll 1s ease-in-out;
+	}
+
+	@keyframes diceRoll {
+		0% {
+			transform: translateX(0) rotate(0deg);
+		}
+		25% {
+			transform: translateX(-20%) rotate(45deg);
+		}
+		50% {
+			transform: translateX(0) rotate(90deg);
+		}
+		75% {
+			transform: translateX(-20%) rotate(135deg);
+		}
+		100% {
+			transform: translateX(0) rotate(180deg);
+		}
+	}

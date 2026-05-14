@@ -1,0 +1,18 @@
+.pen-icon {
+		overflow: visible;
+		transform: rotate(0deg);
+		transform-origin: center;
+	}
+
+	.pen-icon.animate {
+		animation: jiggleAnimation 0.4s ease-in-out 2;
+	}
+
+	@keyframes jiggleAnimation {
+		25% {
+			transform: rotate(-15deg);
+		}
+		75% {
+			transform: rotate(15deg);
+		}
+	}

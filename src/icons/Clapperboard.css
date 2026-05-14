@@ -1,0 +1,46 @@
+.clapperboard-icon {
+		overflow: visible;
+	}
+
+	.clapperboard-outer {
+		transform-origin: 4px 20px;
+		transition: transform 0.8s ease-in-out;
+	}
+
+	.clapperboard-inner {
+		transform-origin: 3px 11px;
+		transition: transform 0.4s ease-in-out;
+	}
+
+	.clapperboard-icon.animate .clapperboard-outer {
+		animation: clapperboardOuter 0.8s ease-in-out;
+	}
+
+	.clapperboard-icon.animate .clapperboard-inner {
+		animation: clapperboardInner 0.4s ease-in-out;
+	}
+
+	@keyframes clapperboardOuter {
+		0%,
+		50% {
+			transform: rotate(-10deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+
+	@keyframes clapperboardInner {
+		0% {
+			transform: rotate(0deg);
+		}
+		30% {
+			transform: rotate(-10deg);
+		}
+		60% {
+			transform: rotate(16deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}

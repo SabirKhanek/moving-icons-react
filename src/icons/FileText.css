@@ -1,0 +1,42 @@
+.file-text-icon {
+		overflow: visible;
+	}
+
+	.text-line {
+		stroke-dasharray: 12;
+		stroke-dashoffset: 0;
+		transition:
+			stroke-dashoffset 0.3s ease,
+			opacity 0.3s ease;
+	}
+
+	.file-text-icon.animate .text-line {
+		animation: textLineAnimation 0.6s ease forwards;
+	}
+
+	.file-text-icon.animate .text-line-1 {
+		animation-delay: 0s;
+	}
+
+	.file-text-icon.animate .text-line-2 {
+		animation-delay: 0.1s;
+	}
+
+	.file-text-icon.animate .text-line-3 {
+		animation-delay: 0.2s;
+	}
+
+	@keyframes textLineAnimation {
+		0% {
+			stroke-dashoffset: 0;
+			opacity: 1;
+		}
+		50% {
+			stroke-dashoffset: 12;
+			opacity: 0;
+		}
+		100% {
+			stroke-dashoffset: 0;
+			opacity: 1;
+		}
+	}

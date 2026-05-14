@@ -1,0 +1,12 @@
+.unfold-vertical-icon {
+		overflow: visible;
+	}
+	.unfold-vertical-icon g {
+		transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+	.move-up {
+		transform: translateY(-2px);
+	}
+	.move-down {
+		transform: translateY(2px);
+	}

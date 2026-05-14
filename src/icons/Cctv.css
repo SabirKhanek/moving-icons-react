@@ -1,0 +1,44 @@
+.cctv-icon {
+		overflow: visible;
+	}
+
+	.cctv-body {
+		transform-origin: 9px 15px;
+		transition: transform 2s ease-in-out;
+	}
+
+	.cctv-icon.animate .cctv-body {
+		animation: cctvRotate 2s ease-in-out;
+	}
+
+	@keyframes cctvRotate {
+		0%,
+		100% {
+			transform: rotate(0deg);
+		}
+		33% {
+			transform: rotate(-15deg);
+		}
+		66% {
+			transform: rotate(10deg);
+		}
+	}
+
+	.cctv-dot {
+		opacity: 1;
+		transition: opacity 1s linear;
+	}
+
+	.cctv-icon.animate .cctv-dot {
+		animation: dotBlink 1s linear infinite;
+	}
+
+	@keyframes dotBlink {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+	}

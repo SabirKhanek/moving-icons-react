@@ -1,0 +1,23 @@
+.box-path {
+		transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		transform: translate(0px, 0px);
+	}
+
+	.box-path.animate {
+		transform: translate(var(--transform-x, 0px), var(--transform-y, 0px));
+	}
+
+	.box-path[data-transform='translate(-1.5px, 1.5px)'].animate {
+		--transform-x: -1.5px;
+		--transform-y: 1.5px;
+	}
+
+	.box-path[data-transform='translate(1.5px, 1.5px)'].animate {
+		--transform-x: 1.5px;
+		--transform-y: 1.5px;
+	}
+
+	.box-path[data-transform='translate(0px, -1.5px)'].animate {
+		--transform-x: 0px;
+		--transform-y: -1.5px;
+	}

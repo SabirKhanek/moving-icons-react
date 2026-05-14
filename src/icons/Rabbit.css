@@ -1,0 +1,19 @@
+.rabbit-icon.animate {
+		animation: rabbitHop 0.8s ease-in-out;
+	}
+
+	@keyframes rabbitHop {
+		0%,
+		100% {
+			transform: translateY(0) scale(1);
+		}
+		25% {
+			transform: translateY(-6px);
+		}
+		50% {
+			transform: translateY(0) scale(1);
+		}
+		75% {
+			transform: translateY(-6px);
+		}
+	}

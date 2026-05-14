@@ -1,0 +1,36 @@
+.signal-icon {
+		overflow: visible;
+	}
+
+	.signal-level {
+		transition: opacity 0.2s ease;
+	}
+
+	.signal-icon.animate .signal-level {
+		opacity: 0;
+		animation: fadeInSequence 1.2s;
+	}
+
+	@keyframes fadeInSequence {
+		0% {
+			opacity: 1;
+		}
+		17% {
+			opacity: 0;
+		}
+		33% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		67% {
+			opacity: 1;
+		}
+		83% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}

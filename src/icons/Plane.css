@@ -1,0 +1,44 @@
+.plane-icon {
+		--x: 0px;
+		--y: 0px;
+		--scale: 1;
+	}
+
+	.plane {
+		transform: translate(var(--x), var(--y)) scale(var(--scale));
+		transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		transform-origin: center;
+	}
+
+	.plane-icon.animate .plane {
+		--x: 3px;
+		--y: -3px;
+		--scale: 0.8;
+	}
+
+	.speed-line {
+		opacity: 0;
+		transform: translate(-3px, 3px);
+		transition:
+			opacity 0.15s ease,
+			transform 0.15s ease;
+		transition-delay: var(--delay);
+	}
+
+	.plane-icon.animate .speed-line {
+		opacity: 1;
+		transform: translate(0, 0);
+		animation: dash 0.15s ease forwards;
+		animation-delay: var(--delay);
+	}
+
+	@keyframes dash {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+
+	.speed-line {
+		stroke-dasharray: 6;
+		stroke-dashoffset: 6;
+	}

@@ -1,0 +1,22 @@
+.square-terminal-icon {
+		overflow: visible;
+	}
+
+	.cursor-line {
+		opacity: 1;
+		transition: opacity 0.8s linear;
+	}
+
+	.cursor-line.animate {
+		animation: blink 0.8s linear infinite;
+	}
+
+	@keyframes blink {
+		0%,
+		100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+	}

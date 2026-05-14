@@ -1,0 +1,11 @@
+.chart-pie-icon {
+		overflow: visible;
+	}
+
+	.pie-slice {
+		transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1.5);
+	}
+
+	.chart-pie-icon.animate .pie-slice {
+		transform: translate(1.1px, -1.1px);
+	}

@@ -1,0 +1,21 @@
+.sword-icon {
+		transform-origin: bottom right;
+		transition: transform 0.3s ease;
+	}
+
+	.sword-icon.animate {
+		animation: swing 1s ease;
+	}
+
+	@keyframes swing {
+		0%,
+		70% {
+			transform: rotate(0deg);
+		}
+		30% {
+			transform: rotate(25deg);
+		}
+		50% {
+			transform: rotate(-5deg);
+		}
+	}
